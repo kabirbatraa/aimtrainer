@@ -63,14 +63,7 @@ function draw() {
     rect(width/2, height/2, 200, 50, 20);
     textSize(20);
     text("menu", width/2, height/2);
-    if (mouseIsPressed && 
-      (width/2 - 100 <= mouseX && mouseX <= width/2 + 100)
-      && (height/2 - 25 <= mouseY && mouseY <= height/2 + 25)
-    ) {
-      // currentScreen = "game";
-      currentScreen = "home";
-      // initializeGame();
-    }
+    
   }
 
 }
@@ -105,4 +98,19 @@ function mousePressed() {
       prevTime = millis();
     }
   }
+
+  else if (currentScreen == "finished") {
+
+    if (
+      // mouseIsPressed && 
+      (width/2 - 100 <= mouseX && mouseX <= width/2 + 100)
+      && (height/2 - 25 <= mouseY && mouseY <= height/2 + 25)
+    ) {
+      // currentScreen = "game";
+      currentScreen = "home";
+      // initializeGame();
+    }
+
+  }
+
 }
