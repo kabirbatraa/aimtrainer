@@ -4,10 +4,14 @@ html, body {
 }
 
 body {
+  height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
 }
 
-canvas {
+/* canvas {
   display: block;
-}
+} */

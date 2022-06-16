@@ -51,6 +51,12 @@ function draw() {
       return;
     }
     circle(circlePos.x, circlePos.y, circleRadius*2)
+    circle(circlePos.x, circlePos.y, circleRadius*2 * 2/3)
+    circle(circlePos.x, circlePos.y, circleRadius*2 * 1/3)
+    line(circlePos.x - circleRadius, circlePos.y, 
+      circlePos.x + circleRadius, circlePos.y);
+    line(circlePos.x, circlePos.y - circleRadius, 
+      circlePos.x, circlePos.y + circleRadius);
     textSize(20);
     text("remaining: " + remaining, width/2, 40);
   }
